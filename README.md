@@ -1,2 +1,4 @@
 
-URL: https://web-development-environments-2023.github.io/assignment2-312207152_207042326/
+Live demo: https://nofarbaron.github.io/SpaceShipWar/
+
+[Play the game](https://nofarbaron.github.io/SpaceShipWar/)
