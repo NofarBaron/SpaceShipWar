@@ -15,8 +15,8 @@ $(document).ready(function() {
 	$("#register-section").hide();
 	$("#login-section").hide();
 	$("#about").hide();
-	$("#play-menu-btn").hide();
-	$("#logout-menu-btn").hide();
+	$("#play-menu-btn").parent().hide();
+	$("#logout-menu-btn").parent().hide();
   $("#preference-section").hide();
   $("#play-section").hide();
   $("#player-history-section").hide();
@@ -162,7 +162,7 @@ function setUserPreferences(){
   $("#welcome-section").hide();
 	$("#play-section").show();
 	$("#preference-section").hide();
-  $("#home-menu-btn").hide();
+  $("#home-menu-btn").parent().hide();
   $("#register-section").hide();
 	$("#login-section").hide();
 	$("#about").hide();
@@ -365,10 +365,10 @@ function setLogIn() {
 	$("#play-section").hide();
 	$("#register-section").hide();
 	$("#login-section").hide();
-	$("#play-menu-btn").show();
-	$("#logout-menu-btn").show();
-	$("#register-menu-btn").hide();
-	$("#login-menu-btn").hide();
+	$("#play-menu-btn").parent().show();
+	$("#logout-menu-btn").parent().show();
+	$("#register-menu-btn").parent().hide();
+	$("#login-menu-btn").parent().hide();
 }
 
 function logout(){
@@ -389,14 +389,14 @@ function setLogOut(){
 	$("#register-section").hide();
 	$("#login-section").hide();
 	$("#preference-section").hide();
-	$("#play-menu-btn").hide();
-	$("#logout-menu-btn").hide();
-	$("#register-menu-btn").show();
-	$("#login-menu-btn").show();
+	$("#play-menu-btn").parent().hide();
+	$("#logout-menu-btn").parent().hide();
+	$("#register-menu-btn").parent().show();
+	$("#login-menu-btn").parent().show();
 	$("#welcome-login-btn").show();
 	$("#welcome-registration-btn").show();
   $("#player-history-section").show();
-  $("#home-menu-btn").show();
+  $("#home-menu-btn").parent().show();
 	// ResetPreferences();
 }
 
@@ -913,6 +913,5 @@ function breakGame(){
   clearInterval(intervalId);
   console.log("Game is broken"); 
 }
-
 
 
