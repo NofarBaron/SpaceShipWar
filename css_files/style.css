@@ -8,7 +8,7 @@ body{
   margin: 0;
   min-height: 100vh;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: "Rajdhani", Arial, sans-serif;
 }
 
 .header-style {
@@ -22,14 +22,19 @@ body{
 }
 
 .header-inner h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.35rem, 1.5vw, 1.25rem);
   margin: 0;
   white-space: nowrap;
+  text-align: center;
   letter-spacing: clamp(0px, 0.15vw, 2px);
   text-transform: uppercase;
-  color: rgba(111, 14, 201, 0.884);
+  color: #c084fc;
   font-family: cursive;
   font-size: clamp(1.25rem, 7vw, 5rem);
-  text-shadow: 0 0 20px rgba(157, 91, 255, 0.6);
+  text-shadow: 0 0 12px rgba(192, 132, 252, 0.8), 0 0 30px rgba(139, 92, 246, 0.55);
 }
 
 .header-inner p {
@@ -107,19 +112,28 @@ input[type="range"]:focus-visible,
 }
 
 #Menu-container > #menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   background: transparent;
   padding: 0;
   margin: 0;
-  text-align: center;
   list-style: none;
 }
 
 #Menu-container > #menu > li{
-  display: inline-block;
+  display: block;
   position: relative;
   z-index: 1;
   cursor: pointer;
-  margin: 0 0.8vw;
+  margin: 0;
+}
+
+#Menu-container > #menu .btn {
+  box-sizing: border-box;
+  width: clamp(84px, 10vw, 140px);
 }
 
 .close{
@@ -557,18 +571,12 @@ footer {
   }
 
   #Menu-container > #menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 0.4rem;
-  }
-
-  #Menu-container > #menu > li {
-    margin: 0;
   }
 
   #Menu-container .btn {
     min-width: 0;
+    width: clamp(68px, 20vw, 100px);
     min-height: 42px;
     padding: 0.55rem 0.7rem;
     font-size: 0.75rem;
@@ -582,4 +590,45 @@ footer {
   .modal {
     padding-top: 12vh;
   }
+}
+
+body,
+body p,
+body label,
+body li,
+body span,
+body th,
+body td,
+body input,
+body .close {
+  font-family: "Rajdhani", Arial, sans-serif;
+}
+
+body h1,
+body h2,
+body h3,
+body .btn {
+  font-family: "Orbitron", Arial, sans-serif;
+}
+
+.header-inner h1,
+#about h1,
+#register-section h2,
+#login-section h2,
+#preference-section h2,
+#Welcome-Section-Buttons h2 {
+  font-family: "Orbitron", Arial, sans-serif;
+}
+
+.header-inner p,
+.welcome-panel p,
+#Welcome-Section-Buttons p,
+#about .about-list li,
+#about .about-list p,
+#about > .modal-content > div > h3,
+#preference-section h3,
+#preference-section p,
+#player-history-section,
+footer {
+  font-family: "Rajdhani", Arial, sans-serif;
 }
