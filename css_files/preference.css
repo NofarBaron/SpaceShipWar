@@ -92,9 +92,9 @@
 }
 
 .rangeW{
-    padding-left: 6vw;
-    padding-top: 7vh;
-    height: 10vh;
+    position: relative;
+    height: auto;
+    padding: 2rem 0 0;
 }
 
 input[type="range"] {
@@ -179,37 +179,26 @@ label {
 
 
 #preference-section > #preference-form > #preference-form-div > .preference-form > .rangeSet > .rangeW > .range-val span {
-    width: 3vw;
-    height: 3vh;
-    line-height: 3vh;
+    width: auto;
+    min-width: 42px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 0.4rem;
     text-align: center;
     background: #f8e76e;
     color: black;
-    font-size: 1vw;
-    display: flex;
+    font-size: 0.85rem;
+    display: block;
     position: absolute;
-    left: 50%;
-    transform: translate(0, -130%);
-    border-radius: 6px;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: space-between;
-    align-items: center;
+    left: 0;
+    top: 0;
+    transform: translateX(-50%);
+    border-radius: 999px;
     font-family: cursive;
 }
 
 #preference-section > #preference-form > #preference-form-div > .preference-form > .rangeSet > .rangeW > .range-val span:before {
-    content: "";
-    position: inherit;
-    width: 0;
-    height: 0;
-    border-top: 10px solid #f8e76e;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    margin-top: -1px;
+    display: none;
 }
 
 
