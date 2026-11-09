@@ -1,22 +1,49 @@
 #welcome-section-notLoggedIn{
-    height: 39vh;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem 3rem;
 }
-
 
 #Welcome-Section-Buttons {
     text-align: center;
     margin: 0;
+    max-width: 700px;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    background: rgba(10, 10, 20, 0.56);
+    box-shadow: 0 20px 45px rgba(12, 12, 22, 0.45);
 }
 
+#Welcome-Section-Buttons h2,
+#Welcome-Section-Buttons p {
+    margin: 0 0 1rem;
+}
+
+#Welcome-Section-Buttons p {
+    color: rgba(255,255,255,0.8);
+    font-family: cursive;
+}
+
+#Welcome-Section-Buttons > #Welcome-ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 
 #Welcome-Section-Buttons > #Welcome-ul > li{
-    height: 0px;
     display: inline-block;
     position: relative;
     z-index: 1;
     cursor: pointer;
-    padding-top: 0px;
-    margin: 0 1vw 0 1vw;
+    margin: 0;
 }
 
 .clickable{

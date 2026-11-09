@@ -4,59 +4,50 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="js_files/jquery.validate.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css_files/style.css">
     <link rel="stylesheet" type="text/css" href="css_files/welcome.css">
     <link rel="stylesheet" type="text/css" href="css_files/register.css">
     <link rel="stylesheet" type="text/css" href="css_files/login.css">
     <link rel="stylesheet" type="text/css" href="css_files/preference.css">
+    <link rel="stylesheet" type="text/css" href="css_files/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>SpaceShips War</title>
+    <title>SpaceShip War</title>
 
   </head>
-  <body style="background-color: black;  background-image:url(media/black_space.jpg);">
+  <body>
     <header class="header-style">
-        <center>
-        <h1 style="margin: 0; letter-spacing: 2px; text-transform: uppercase; color: rgba(111, 14, 201, 0.884); font-family: cursive; font-size: 80px;">🚀Spaceship War🚀</h1>
-      </center>
+      <div class="header-inner">
+        <h1>🚀 SpaceShip War 🚀</h1>
+        <p>Arcade action. Pick your ship. Set your rules. Chase the high score.</p>
+      </div>
     </header>
 
 	<div id="Menu-container">
 		<ul id="menu">
 			<li>
-				<button id="home-menu-btn" class="btn" data-text="color">WELCOME</button>
+				<button id="home-menu-btn" class="btn" data-text="color">HOME</button>
 			</li>
 			<li>
-				<button id="register-menu-btn" class="btn" data-text="color">REGISTER</button>
+				<button id="register-menu-btn" class="btn" data-text="color">SIGN UP</button>
 			</li>
 			<li>
-				<button id="play-menu-btn" class="btn" data-text="color">NEW GAME</button>
+				<button id="play-menu-btn" class="btn" data-text="color">PLAY</button>
 			</li>
 			<li>
-				<button id="login-menu-btn" class="btn" data-text="color">LOGIN</button>
+				<button id="login-menu-btn" class="btn" data-text="color">LOG IN</button>
 			</li>
 			<li>
 				<button id="logout-menu-btn" class="btn" data-text="color" onclick="return logout()">LOGOUT</button>
 			</li>
 			<li>
-				<button id="about-menu-btn" class="btn" data-text="color" hrel="#about" onclick="openAbout()">ABOUT</button>
+				<button id="about-menu-btn" class="btn" data-text="color" type="button" aria-controls="about" onclick="openAbout()">ABOUT</button>
 			</li>
 		</ul>
 	</div>
 
 	<section class="welcome-section" id="welcome-section-notLoggedIn">
-		<!-- <div id="Welcome-img">
-			<img id="welcome-gif" src="media/images/welcome.gif"/>
-		</div> -->
-		<div id="Welcome-Section-Buttons">
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+		<div class="welcome-panel" id="Welcome-Section-Buttons">
+			<h2>Ready for launch?</h2>
+			<p>Sign in, create your profile, and jump into your next arcade run.</p>
 			<ul id="Welcome-ul">
 				<li>
 					<button id="welcome-login-btn" type="button" class="btn" data-text="color">LOGIN</button>
@@ -146,12 +137,12 @@
 					<h3>
 						Color:
 					</h3>
-					<div >
-						<button id="blackPlayer" class="color-btn" data-text="color">
-							<img src="player12.png" alt="black Picture 1">
+					<div class="ship-options">
+						<button id="blackPlayer" class="color-btn" type="button" aria-label="Choose black ship" data-text="color">
+							<img src="media/player12.png" alt="black Picture 1">
 						</button>
-						<button id="bluePlayer" class="color-btn" data-text="color">
-							<img src="player_blue.png" alt="blue Picture 1">
+						<button id="bluePlayer" class="color-btn" type="button" aria-label="Choose blue ship" data-text="color">
+							<img src="media/player_blue.png" alt="blue Picture 1">
 						</button>
 					</div>
 				</div>
@@ -237,16 +228,8 @@
 	<div class="wrapper">
 		<!-- Content here -->
 	</div>
-    <footer style="font-family: cursive; text-align: center;">   
-        <span class="contact">Nofar Baron 
-          <a href = "mailto:nofarbaron28@gmail.com?subject = Feedback&body = Message">
-            nofarbaron28@gmail.com
-          </a>
-          <br>
-            Shahar Asayag  <a href = "mailto:shahar@gmail.com?subject = Feedback&body = Message">
-			asasha@post.bgu.ac.il
-            </a>
-        </span>
+    <footer style="font-family: cursive; text-align: center; padding: 2rem 1rem 3rem; color: rgba(255,255,255,0.75);">
+        <span class="contact">SpaceShip War • Arcade demo</span>
     </footer>
 
 	<script type="text/javascript" src="js_files/game.js"></script>

@@ -9,7 +9,7 @@ var limitTime = 120;
 var audio = document.getElementById("startMusic");
 var playerHistory = [];
 var gameCounter = 1;
-var playerColor = 'player12.png'; //defualt player
+var playerColor = 'media/player12.png'; //defualt player
 
 $(document).ready(function() {
 	$("#register-section").hide();
@@ -138,13 +138,13 @@ $('.color-btn').click(function() {
 })
 
 $("#blackPlayer").click(function(){
-  playerColor = 'player12.png';
+  playerColor = 'media/player12.png';
   $('.color-btn').removeClass('clicked');
   $(this).addClass('clicked');
 });
 
 $("#bluePlayer").click(function(){
-  playerColor = 'player_blue.png';
+  playerColor = 'media/player_blue.png';
   $('.color-btn').removeClass('clicked');
   $(this).addClass('clicked');
 });
@@ -527,7 +527,7 @@ function startGame(){
       this.height=10;
       this.speed=10;
       this.image=new Image();
-      this.image.src='player11.png'
+      this.image.src='media/player11.png'
     }
   }
 
@@ -574,15 +574,15 @@ const rocket2 = {
   speed: 10,
   image: new Image(),
 };
-rocket.image.src = 'shootRocket.png';
-rocket2.image.src = 'shootRocket.png';
+rocket.image.src = 'media/shootRocket.png';
+rocket2.image.src = 'media/shootRocket.png';
 
 
 // Enemies properties
 var enemies = [];
 var booli=false
 const enemyImage = new Image();
-enemyImage.src = 'enemy11.png';
+enemyImage.src = 'media/enemy11.png';
 const enemyWidth = 30;
 const enemyHeight = 20;
 var enemySpeed = 2;
@@ -598,23 +598,23 @@ function createEnemies() {
     console.log("The row is ="+ row)
     if(row==0){
       console.log("choose first line image");
-      enemyImageChanged.src='firstline.png';
+      enemyImageChanged.src='media/firstline.png';
     }
     if (row ==1)
     {
-      enemyImageChanged.src='e23.png';
+      enemyImageChanged.src='media/e23.png';
     }
     if (row ==2)
     {
-      enemyImageChanged.src='e3.png';
+      enemyImageChanged.src='media/e3.png';
     }
     if (row ==3)
     {
-      enemyImageChanged.src='e44.png';
+      enemyImageChanged.src='media/e44.png';
     }
     if (row ==4)
     {
-      enemyImageChanged.src='e55.png';
+      enemyImageChanged.src='media/e55.png';
     }
     enemies.push({
       x:(col * enemyWidth + enemyWidth / 2),
